@@ -70,13 +70,6 @@ console.log(data.data)
       article_photo:
         "https://res.cloudinary.com/dafjb9vn7/image/upload/v1698795623/arts_dxcrqk.png",
     },
-    {
-      id: 6,
-      article_name: "Article Logo",
-      article_detail: "This is article logo that use in this website",
-      article_photo:
-        "https://res.cloudinary.com/dafjb9vn7/image/upload/v1698795623/arts_dxcrqk.png",
-    },
   ];
   useEffect(() => {
     getData();
