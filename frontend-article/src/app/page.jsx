@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [data, setData] = useState([])
-  const [getId, setId] = useState(null);
   const getData = async () => {
     try {
       const response = await fetch(
@@ -23,15 +22,10 @@ export default function Home() {
 
       const result = await response.json();
       setData(result);
-      console.log(result)
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
-console.log(data.data)
-
-
-
 
 
   const datum = [

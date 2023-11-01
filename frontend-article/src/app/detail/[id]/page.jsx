@@ -21,12 +21,10 @@ function Detail({params}) {
     
           const result = await response.json();
           setDataId(result);
-          console.log(result)
         } catch (error) {
           console.error("Error fetching data:", error);
         }
       };
-      console.log()
 
       useEffect(()=>{
         getDataId()
