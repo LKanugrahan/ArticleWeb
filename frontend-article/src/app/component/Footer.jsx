@@ -1,9 +1,9 @@
 import React from "react";
 
-function Footer() {
+function Footer({fullname}) {
   return (
     <footer className="border-2 border-t-black flex justify-center">
-      <div>Creater by Langgeng Kanugrahan</div>
+      <div>Creater by {fullname}</div>
     </footer>
   );
 }
