@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
-
+import Nav from "../app/component/Nav";
+import Footer from "../app/component/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,22 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="mx-auto p-5 shadow-lg rounded-b-lg flex justify-between">
-          <div className="flex">
-            <img
-              className="rounded-lg"
-              src={
-                "https://res.cloudinary.com/dafjb9vn7/image/upload/v1698795623/arts_dxcrqk.png"
-              }
-              width={50}
-              height={50}
-            ></img>
-            <Link href={'/'} className="px-4 text-xl font-semibold self-center">My Articles</Link>
-          </div>
-          <div className="flex"><Link href={`/form`} className="text-l self-center font-semibold">Post</Link></div>
-        </nav>
+        <Nav/>
         <div>{children}</div>
-        <footer className="border-2 border-t-black flex justify-center"><div>Creater by Langgeng Kanugrahan</div></footer>
+        <Footer/>
       </body>
     </html>
   );
